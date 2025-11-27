@@ -5,8 +5,8 @@ import { ContractUI } from "./ContractUI";
 import "@scaffold-ui/debug-contracts/styles.css";
 import { useSessionStorage } from "usehooks-ts";
 import { BarsArrowUpIcon } from "@heroicons/react/20/solid";
-import { ContractName, GenericContract } from "~~/utils/scaffold-eth/contract";
-import { useAllContracts } from "~~/utils/scaffold-eth/contractsData";
+import { ContractName, GenericContract } from "~~/utils/scaffold-shard/contract";
+import { useAllContracts } from "~~/utils/scaffold-shard/contractsData";
 
 const selectedContractStorageKey = "scaffoldEth2.selectedContract";
 

@@ -1,4 +1,5 @@
 import * as chains from "viem/chains";
+import { shardeumSphinx } from "./utils/scaffold-shard/shardeum";
 
 export type ScaffoldConfig = {
   targetNetworks: readonly chains.Chain[];
@@ -13,7 +14,8 @@ export const DEFAULT_ALCHEMY_API_KEY = "cR4WnXePioePZ5fFrnSiR";
 
 const scaffoldConfig = {
   // The networks on which your DApp is live
-  targetNetworks: [chains.hardhat],
+  // Using Shardeum Mezame Testnet (Chain ID: 8119)
+  targetNetworks: [shardeumSphinx],
 
   // The interval at which your front-end polls the RPC servers for new data
   // it has no effect if you only target the local network (default is 4000)
